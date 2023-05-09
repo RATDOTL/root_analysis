@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "tdc.C": "cpp",
+        "pl1.C": "cpp",
+        "pl2.C": "cpp",
+        "pl3.C": "cpp",
+        "rootlogon.C": "cpp",
+        "adc.C": "cpp",
+        "adc_overlay.C": "cpp",
+        "single_hist.C": "cpp",
+        "double_hist_arrng.C": "cpp",
+        "double_hist_cmpr.C": "cpp",
+        "pl.C": "cpp",
+        "plw.C": "cpp",
+        "hal004-005.C": "cpp",
+        "hal003-005.C": "cpp"
+    }
+}
