@@ -13,6 +13,11 @@
         "pl.C": "cpp",
         "plw.C": "cpp",
         "hal004-005.C": "cpp",
-        "hal003-005.C": "cpp"
+        "hal003-005.C": "cpp",
+        "hal006.C": "cpp",
+        "hal006-007.C": "cpp",
+        "hal006-007 copy.C": "cpp",
+        "hal008-009.C": "cpp",
+        "run035-036.C": "cpp"
     }
 }
