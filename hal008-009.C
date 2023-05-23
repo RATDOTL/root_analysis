@@ -47,5 +47,6 @@
 
 
     // c1->Print("/mnt/c/Users/posei/Desktop/tokken/winscp/data_test/output/run013_015.pdf");
-    // c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
+    c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
+    c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].png");
 }

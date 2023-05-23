@@ -18,6 +18,10 @@
         "hal006-007.C": "cpp",
         "hal006-007 copy.C": "cpp",
         "hal008-009.C": "cpp",
-        "run035-036.C": "cpp"
+        "run035-036.C": "cpp",
+        "hal008-009 copy.C": "cpp",
+        "hal011.C": "cpp",
+        "hal011 copy.C": "cpp",
+        "tars002.C": "cpp"
     }
 }
