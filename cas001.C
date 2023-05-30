@@ -8,13 +8,13 @@
     
     
     f0->cd();
-    // T->Draw("a[6]>>h0(100,1200,1500)");
+    T->Draw("a[4]>>h0(100,1200,1500)");
 
     // T->Draw("a[0]>>h0(100,1200,1500)","600<t[0]&&t[0]<1500");
 
     // T->Draw("a[1]>>h0(100,1000,2500)","300<t[1]&&t[1]<700");
 
-    T->Draw("a[4]:a[6]>>h0(100,1200,1500,100,1200,1500)>");
+    // T->Draw("a[4]:a[6]>>h0(100,1200,1500,100,1200,1500)>");
 
     // T->Draw("a[5]>>h0(100,1000,3000)","400<t[3]&&t[3]<700");
 
@@ -32,21 +32,21 @@
     h0->SetLineColor(2);
     h0->Draw();
 
-//     f1->cd();
-//     // // // T->Draw("a[0]>>h1(100,0,3000)","","same");
+    f1->cd();
+    // // // T->Draw("a[0]>>h1(100,0,3000)","","same");
 
-//     // T->Draw("a[0]>>h1(100,1100,2000)","","same");
-//     // T->Draw("a[1]>>h1(100,1000,2500)","","same"); 
-//     // T->Draw("a[4]>>h1(100,1000,2500)","","same"); 
-//     T->Draw("a[5]>>h1(100,1000,2500)","","same"); 
+    // T->Draw("a[0]>>h1(100,1100,2000)","","same");
+    // T->Draw("a[1]>>h1(100,1000,2500)","","same"); 
+    // T->Draw("a[4]>>h1(100,1000,2500)","","same"); 
+    T->Draw("a[6]>>h1(100,1200,1500)","","same"); 
 
 
 
-//     h1->SetLineColor(4);
-//     h1->Draw("same");
+    h1->SetLineColor(4);
+    h1->Draw("same");
 
 
 //     // c1->Print("/mnt/c/Users/posei/Desktop/tokken/winscp/data_test/output/run013_015.pdf");
 //     c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
-    c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/cas001_a[4]a[6].png");
+    c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/cas001_a[4]_a[6].png");
 // }
