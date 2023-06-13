@@ -26,6 +26,10 @@
         "tars002 copy.C": "cpp",
         "cas001.C": "cpp",
         "cas001 copy.C": "cpp",
-        "cas002.C": "cpp"
+        "cas002.C": "cpp",
+        "cas002 copy.C": "cpp",
+        "cas003.C": "cpp",
+        "cas002-003.C": "cpp",
+        "cas004.C": "cpp"
     }
 }
