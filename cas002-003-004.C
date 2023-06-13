@@ -3,12 +3,14 @@
     // TFile *f1 = TFile :: Open("/mnt/c/Users/posei/Desktop/tokken/winscp/data_test/data/run015.root");
     
     // data_hal
-    TFile *f0 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_cas/cas004.root");
-    // TFile *f1 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_hal/hal008.root");
+    TFile *f0 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_cas/cas002.root");
+    TFile *f1 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_cas/cas003.root");
+    TFile *f2 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_cas/cas004.root");
+    // TFile *f1 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_hal/hal00.root");
     
     
     f0->cd();
-    T->Draw("a[4]>>h0(400,1200,1500)");
+    T->Draw("a[6]>>h0(300,1200,2500)");
 
     // T->Draw("a[0]>>h0(100,1200,1500)","600<t[0]&&t[0]<1500");
 
@@ -32,21 +34,36 @@
     h0->SetLineColor(2);
     h0->Draw();
 
-    f0->cd();
+    f1->cd();
     // // // T->Draw("a[0]>>h1(100,0,3000)","","same");
 
     // T->Draw("a[0]>>h1(100,1100,2000)","","same");
     // T->Draw("a[1]>>h1(100,1000,2500)","","same"); 
     // T->Draw("a[4]>>h1(100,1000,2500)","","same"); 
-    T->Draw("a[6]>>h1(400,1200,1500)","","same"); 
+    T->Draw("a[6]>>h1(200,1200,2500)","","same histogram"); 
+    h1->Scale(h0->GetEntries()/h1->GetEntries());
 
 
 
     h1->SetLineColor(4);
-    h1->Draw("same");
+    h1->Draw("same histogram");
+
+    f2->cd();
+    // // // T->Draw("a[0]>>h1(100,0,3000)","","same");
+
+    // T->Draw("a[0]>>h1(100,1100,2000)","","same");
+    // T->Draw("a[1]>>h1(100,1000,2500)","","same"); 
+    // T->Draw("a[4]>>h1(100,1000,2500)","","same"); 
+    T->Draw("a[6]>>h2(200,1200,2500)","","same histogram"); 
+    h2->Scale(h0->GetEntries()/h2->GetEntries());
+
+
+
+    h2->SetLineColor(6);
+    h2->Draw("same histogram");
 
 
 //     // c1->Print("/mnt/c/Users/posei/Desktop/tokken/winscp/data_test/output/run013_015.pdf");
 //     c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
-    c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/cas004_a[4]a[6].png");
+    // c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/cas002-003-004_a[6].png");
 // }

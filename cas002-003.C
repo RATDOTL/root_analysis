@@ -43,13 +43,13 @@
     // T->Draw("a[1]>>h1(100,1000,2500)","","same"); 
     // T->Draw("a[4]>>h1(100,1000,2500)","","same"); 
     // T->Draw("a[6]>>h1(200,1340,1600)","","same"); 
-    T->Draw("a[4]>>h1(200,1290,2500)","","same"); 
+    T->Draw("a[4]>>h1(200,1290,2500)","","same histogram"); 
     h1->Scale(h0->GetEntries()/h1->GetEntries());
 
 
 
     h1->SetLineColor(4);
-    h1->Draw("same");
+    h1->Draw("same histogram");
 
 
 //     // c1->Print("/mnt/c/Users/posei/Desktop/tokken/winscp/data_test/output/run013_015.pdf");

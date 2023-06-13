@@ -30,6 +30,7 @@
         "cas002 copy.C": "cpp",
         "cas003.C": "cpp",
         "cas002-003.C": "cpp",
-        "cas004.C": "cpp"
+        "cas004.C": "cpp",
+        "cas002-003-004.C": "cpp"
     }
 }
