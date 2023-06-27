@@ -3,14 +3,14 @@
     // TFile *f1 = TFile :: Open("/mnt/c/Users/posei/Desktop/tokken/winscp/data_test/data/run015.root");
     
     // data_hal
-    TFile *f0 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_cas/cas011.root");
+    TFile *f0 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_cas/cas012.root");
     // TFile *f1 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_cas/cas004.root");
     // TFile *f2 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_cas/cas005.root");
     // TFile *f1 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_hal/hal00.root");
     
     
     f0->cd();
-    T->Draw("a[4]>>h0(300,1000,3000)");
+    T->Draw("a[6]>>h0(300,1300,2600)");
 
     // T->Draw("a[0]>>h0(100,1200,1500)","600<t[0]&&t[0]<1500");
 
@@ -65,5 +65,5 @@
 
 //     // c1->Print("/mnt/c/Users/posei/Desktop/tokken/winscp/data_test/output/run013_015.pdf");
 //     c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
-    // c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/cas011_a[4].png");
+    c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/cas012_a[6].png");
 // }
