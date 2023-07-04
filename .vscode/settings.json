@@ -51,6 +51,7 @@
         "cas012 copy.C": "cpp",
         "cas014.C": "cpp",
         "cas012-014.C": "cpp",
-        "cas015.C": "cpp"
+        "cas015.C": "cpp",
+        "cas012-015.C": "cpp"
     }
 }

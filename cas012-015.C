@@ -10,7 +10,7 @@
     
     
     f0->cd();
-    T->Draw("a[4]>>h0(300,1200,1700)");
+    T->Draw("a[6]>>h0(300,1300,2000)");
 
     // T->Draw("a[0]>>h0(100,1200,1500)","600<t[0]&&t[0]<1500");
 
@@ -40,7 +40,7 @@
     // T->Draw("a[0]>>h1(100,1100,2000)","","same");
     // T->Draw("a[1]>>h1(100,1000,2500)","","same"); 
     // T->Draw("a[4]>>h1(100,1000,2500)","","same"); 
-    T->Draw("a[4]>>h1(200,1200,1700)","","same histogram"); 
+    T->Draw("a[6]>>h1(200,1300,2000)","","same histogram"); 
     h1->Scale(h0->GetEntries()/h1->GetEntries());
 
 
@@ -65,5 +65,5 @@
 
 //     // c1->Print("/mnt/c/Users/posei/Desktop/tokken/winscp/data_test/output/run013_015.pdf");
 //     c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
-    c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/cas012-015_a[4].png");
+    // c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/cas012-015_a[6].png");
 // }
