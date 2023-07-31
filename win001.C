@@ -11,15 +11,15 @@
 
 
     // labo PC
-    TFile *f0 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data_cas/cas021.root");
-    TFile *f1 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data_cas/cas012.root");
+    TFile *f0 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data_win/win001.root");
+    // TFile *f1 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data_win/win001.root");
     // TFile *f2 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_cas/cas005.root");
     // TFile *f1 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_hal/hal00.root");
     
     
     
     f0->cd();
-    T->Draw("a[4]-1472>>h0(300,0,1500)");
+    T->Draw("a[3]>>h0(100,700,820)");
 
     // T->Draw("a[0]>>h0(100,1200,1500)","600<t[0]&&t[0]<1500");
 
@@ -43,19 +43,19 @@
     h0->SetLineColor(2);
     h0->Draw();
 
-    f1->cd();
-    // // // T->Draw("a[0]>>h1(100,0,3000)","","same");
+    // f1->cd();
+    // // // // T->Draw("a[0]>>h1(100,0,3000)","","same");
 
-    // T->Draw("a[0]>>h1(100,1100,2000)","","same");
-    // T->Draw("a[1]>>h1(100,1000,2500)","","same"); 
-    // T->Draw("a[4]>>h1(100,1000,2500)","","same"); 
-    T->Draw("a[4]-1270>>h1(300,0,1500)","","same histogram"); 
-    h1->Scale(h0->GetEntries()/h1->GetEntries());
+    // // T->Draw("a[0]>>h1(100,1100,2000)","","same");
+    // // T->Draw("a[1]>>h1(100,1000,2500)","","same"); 
+    // // T->Draw("a[4]>>h1(100,1000,2500)","","same"); 
+    // T->Draw("a[4]-1270>>h1(300,0,1500)","","same histogram"); 
+    // h1->Scale(h0->GetEntries()/h1->GetEntries());
 
 
 
-    h1->SetLineColor(4);
-    h1->Draw("same histogram");
+    // h1->SetLineColor(4);
+    // h1->Draw("same histogram");
 
     // f2->cd();
     // // // // T->Draw("a[0]>>h1(100,0,3000)","","same");
@@ -74,5 +74,5 @@
 
 //     // c1->Print("/mnt/c/Users/posei/Desktop/tokken/winscp/data_test/output/run013_015.pdf");
 //     c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
-    // c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/cas012-021_a[4]-a[4].png");
+    c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/win001_t[1].png");
 // }
