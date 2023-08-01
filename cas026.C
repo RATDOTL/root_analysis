@@ -2,27 +2,22 @@
     // TFile *f0 = TFile :: Open("/mnt/c/Users/posei/Desktop/tokken/winscp/data_test/data/run017.root");
     // TFile *f1 = TFile :: Open("/mnt/c/Users/posei/Desktop/tokken/winscp/data_test/data/run015.root");
     
-
-    // TFile *f0 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_cas/cas021.root");
-    // TFile *f1 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_cas/cas012.root");
+    // data_hal
+    // TFile *f0 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_cas/cas025.root");
+    // TFile *f1 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_cas/cas024.root");
     // TFile *f2 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_cas/cas005.root");
     // TFile *f1 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_hal/hal00.root");
-
-
 
     // labo PC
-    TFile *f0 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data_win/win001.root");
-    // TFile *f1 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data_win/win001.root");
+    TFile *f0 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data_cas/cas026.root");
+    // TFile *f1 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data_cas/cas024.root");
     // TFile *f2 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_cas/cas005.root");
     // TFile *f1 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_hal/hal00.root");
-    
     
     
     f0->cd();
-    T->Draw("a[0]>>h0(100,1000,1500)");
-    T->Draw("a[1]>>h0(100,1200,1600)");
-    T->Draw("a[2]>>h0(100,400,700)");
-    T->Draw("a[3]>>h0(100,700,820)");
+    T->Draw("a[2]-1335>>h0(100,0,50)");
+    // T->Draw("a[4]-470>>h0(100,0,50)");
 
     // T->Draw("a[0]>>h0(100,1200,1500)","600<t[0]&&t[0]<1500");
 
@@ -52,7 +47,8 @@
     // // T->Draw("a[0]>>h1(100,1100,2000)","","same");
     // // T->Draw("a[1]>>h1(100,1000,2500)","","same"); 
     // // T->Draw("a[4]>>h1(100,1000,2500)","","same"); 
-    // T->Draw("a[4]-1270>>h1(300,0,1500)","","same histogram"); 
+    // T->Draw("a[2]-1270>>h1(300,0,1500)","","same histogram"); 
+    // // T->Draw("a[4]-1450>>h1(300,0,1500)","","same histogram"); 
     // h1->Scale(h0->GetEntries()/h1->GetEntries());
 
 
@@ -77,5 +73,7 @@
 
 //     // c1->Print("/mnt/c/Users/posei/Desktop/tokken/winscp/data_test/output/run013_015.pdf");
 //     c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
-    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/win001_t[1].png");
+    // c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/cas026_a[4].png");
+
+    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/cas026_a[2].png");
 // }
