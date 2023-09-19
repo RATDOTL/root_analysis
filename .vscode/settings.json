@@ -71,7 +71,10 @@
         "cas025-024.C": "cpp",
         "win001.C": "cpp",
         "cas025-024 copy.C": "cpp",
-        "cas026.C": "cpp"
+        "cas026.C": "cpp",
+        "win002.C": "cpp",
+        "win002 copy.C": "cpp",
+        "win003.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
