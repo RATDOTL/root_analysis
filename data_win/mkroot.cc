@@ -11,7 +11,7 @@ int mkroot(int win){
   TTree* tnew = new TTree("T", "adc_tdc");   // tree を準備
   
   Int_t winid, evid = 0;
-  const int num_channel = 8;
+  const int num_channel = 2;
   Float_t a[num_channel], t[num_channel];
 
   tnew->Branch("winid", &winid, "winid/I"); //Tree のブランチ(枝)に winid を登録
