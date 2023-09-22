@@ -82,7 +82,11 @@
         "win005 copy.C": "cpp",
         "win006.C": "cpp",
         "win006 copy.C": "cpp",
-        "win007.C": "cpp"
+        "win007.C": "cpp",
+        "win007 copy.C": "cpp",
+        "win010.C": "cpp",
+        "win010 copy.C": "cpp",
+        "win011.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
