@@ -11,7 +11,7 @@
 
 
     // labo PC
-    TFile *f0 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data_win/win003.root");
+    TFile *f0 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data_win/win005.root");
     // TFile *f1 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data_win/win001.root");
     // TFile *f2 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_cas/cas005.root");
     // TFile *f1 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_hal/hal00.root");
@@ -19,17 +19,17 @@
     
     
     f0->cd();
-    // T->Draw("a[0]>>h0(100,1200,1300)");
+    // T->Draw("a[0]>>h0(100,1250,1500)");
     T->Draw("t[1]");
-    // T->Draw("a[1]>>h0(100,1350,1450)");
+    // T->Draw("a[1]>>h0(100,1400,1500)");
     // T->Draw("a[2]>>h0(100,0,1000)");
     // T->Draw("a[3]>>h0(100,0,1000)");
 
     
-    // T->Draw("a[0]>>h0(100,1200,1300)","0<t[0]&&t[0]<1000");
+    // T->Draw("a[0]>>h0(100,1250,1500)","200<t[0]&&t[0]<500");
     // T->Draw("a[0]>>h0(100,1200,1300)","a[2]>1000");
 
-    // T->Draw("a[1]>>h0(100,1350,1450)","250<t[1]&&t[1]<450");
+    // T->Draw("a[1]>>h0(100,1350,1450)","200<t[1]&&t[1]<600");
     // T->Draw("a[1]>>h0(100,1350,1450)","a[3]>450");
 
     // T->Draw("a[4]:a[6]>>h0(100,1200,3000,100,1200,3000)>");
@@ -58,10 +58,10 @@
 
     
     // T->Draw("a[0]>>h1(100,1200,1300)","0<t[0]&&t[0]<1000","same");
-    // T->Draw("a[0]>>h1(100,1200,1300)","t[0]>1000","same");
+    // T->Draw("a[0]>>h1(100,1250,1500)","t[0]>500","same");
 
     // T->Draw("a[1]>>h1(100,1350,1450)","250<a[3]&&a[3]<450","same");
-    // T->Draw("a[1]>>h1(100,1350,1450)","t[1]>450","same");
+    // T->Draw("a[1]>>h1(100,1350,1450)","t[1]>600","same");
 
     // // // // T->Draw("a[0]>>h1(100,0,3000)","","same");
 
@@ -94,5 +94,5 @@
 
 //     // c1->Print("/mnt/c/Users/posei/Desktop/tokken/winscp/data_test/output/run013_015.pdf");
 //     c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
-    c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/win003_t[1].png");
+    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/win005_t[1].png");
 // }
