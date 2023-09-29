@@ -94,7 +94,8 @@
         "test002 copy.C": "cpp",
         "test004.C": "cpp",
         "test004 copy.C": "cpp",
-        "test007.C": "cpp"
+        "test007.C": "cpp",
+        "test003.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
