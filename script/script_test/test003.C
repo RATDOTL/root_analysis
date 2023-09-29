@@ -26,9 +26,9 @@
     // T->Draw("a[2]>>h0(100,1400,1600)");
     // T->Draw("a[3]>>h0(100,1250,1500)");
 
-    // T->Draw("a[0]>>h0(100,1200,1400)","!(1000<t[0]&&t[0]<2000)");
+    T->Draw("a[0]>>h0(100,1200,1400)","!(1000<t[0]&&t[0]<2000)");
 
-    T->Draw("a[1]>>h0(100,1250,1450)","!(1000<t[1]&&t[1]<2000)");
+    // T->Draw("a[1]>>h0(100,1250,1450)","!(1000<t[1]&&t[1]<2000)");
 
     // T->Draw("a[2]>>h0(100,1400,1700)","!(1000<t[2]&&t[2]<2000)");
     
@@ -63,9 +63,9 @@
     // c1->SetLogy();
 
     
-    // T->Draw("a[0]>>h1(100,1200,1400)","1000<t[0]&&t[0]<2000","same");
+    T->Draw("a[0]>>h1(100,1200,1400)","1000<t[0]&&t[0]<2000","same");
 
-    T->Draw("a[1]>>h1(100,1250,1450)","1000<t[1]&&t[1]<2000","same");
+    // T->Draw("a[1]>>h1(100,1250,1450)","1000<t[1]&&t[1]<2000","same");
 
     // T->Draw("a[2]>>h1(100,1400,1700)","1000<t[2]&&t[2]<2000","same");
 
@@ -81,7 +81,7 @@
     // h1->Scale(h0->GetEntries()/h1->GetEntries());
 
 
-    c1->SetLogy();
+    // c1->SetLogy();
 
     h1->SetLineColor(4);
     h1->Draw("same");
@@ -103,5 +103,5 @@
 
 //     // c1->Print("/mnt/c/Users/posei/Desktop/tokken/winscp/data_test/output/run013_015.pdf");
 //     c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
-    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_test/test003_a[1].png");
+    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_test/test003_a[0].png");
 // }
