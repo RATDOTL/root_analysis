@@ -11,7 +11,7 @@
 
 
     // labo PC
-    TFile *f0 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_test/test004.root");
+    TFile *f0 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_test/test006.root");
     // TFile *f1 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data_win/win001.root");
     // TFile *f2 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_cas/cas005.root");
     // TFile *f1 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_hal/hal00.root");
@@ -19,21 +19,21 @@
     
     
     f0->cd();
-    // T->Draw("t[3]>>h0(100,1250,1450)");
-    T->Draw("t[0]>>h0");
+    // T->Draw("t[3]>>h0(100,1250,2000)");
+    // T->Draw("a[2]>>h0");
     // c1->SetLogy();
     // T->Draw("a[1]>>h0(100,1300,1500)");
     // T->Draw("a[2]>>h0(100,1400,1600)");
     // T->Draw("a[3]>>h0(100,1250,1500)");
 
-    // T->Draw("a[0]>>h0(100,1200,1400)","!(1000<t[0]&&t[0]<2000)");
+    // T->Draw("a[0]>>h0(100,1260,1600)","800<t[0]&&t[0]<2000");
 
-    // T->Draw("a[1]>>h0(100,1250,1450)","!(1000<t[1]&&t[1]<2000)");
+    // T->Draw("a[1]>>h0(100,1250,1600)","1250<t[1]&&t[1]<1450");
 
-    // T->Draw("a[2]>>h0(100,1500,1800)","1300<t[2]&&t[2]<1440");
+    T->Draw("a[2]>>h0(100,1400,1600)","4000<t[2]&&t[2]<4500");
     
 
-    // T->Draw("a[3]>>h0(100,1300,1600)","1250<t[3]&&t[3]<1450");
+    // T->Draw("a[3]>>h0(100,1240,1500)","4000<t[2]&&t[2]<4500");
 
 
     // T->Draw("a[4]:a[6]>>h0(100,1200,3000,100,1200,3000)>");
@@ -63,13 +63,13 @@
     // c1->SetLogy();
 
     
-    // T->Draw("a[0]>>h1(100,1200,1400)","1000<t[0]&&t[0]<2000","same");
+    // T->Draw("a[0]>>h1(100,1260,1600)","!(800<t[0]&&t[0]<2000)","same");
 
-    // T->Draw("a[1]>>h1(100,1250,1450)","1000<t[1]&&t[1]<2000","same");
+    // T->Draw("a[1]>>h1(100,1250,1600)","!(1250<t[1]&&t[1]<1450)","same");
 
-    // T->Draw("a[2]>>h1(100,1500,1800)","!(1300<t[2]&&t[2]<1440)","same");
+    T->Draw("a[2]>>h1(100,1400,1600)","!(4000<t[2]&&t[2]<4500)","same");
 
-    // T->Draw("a[3]>>h1(100,1300,1600)","!(1250<t[3]&&t[3]<1450)","same");
+    // T->Draw("a[3]>>h1(100,1240,1500)","!(4000<t[2]&&t[2]<4500)","same");
 
     // // // // T->Draw("a[0]>>h1(100,0,3000)","","same");
 
@@ -81,7 +81,7 @@
     // h1->Scale(h0->GetEntries()/h1->GetEntries());
 
 
-    // c1->SetLogy();
+    c1->SetLogy();
 
     h1->SetLineColor(4);
     h1->Draw("same");
@@ -103,5 +103,5 @@
 
 //     // c1->Print("/mnt/c/Users/posei/Desktop/tokken/winscp/data_test/output/run013_015.pdf");
 //     c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
-    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_test/test004_a[3].png");
+    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_test/test006_a[2].png");
 // }
