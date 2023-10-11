@@ -19,7 +19,7 @@
 
 	TChain * chain = new TChain("T");
 	chain->LoadTree(0);
-	chain->Add("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_spr/spr022.root");
+	chain->Add("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_spr/spr048.root");
 	chain->SetBranchAddress("a",a);
 	chain->SetBranchAddress("t",t);
 
@@ -56,7 +56,7 @@
 		hTDC[i]->Draw();
 	}
 
-// c0->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_spr/spr027_ADC_HV(2000).png");
-// c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_spr/spr027_TDC_HV(2000).png");
+c0->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_spr/spr048_ADC_HV(2000).png");
+c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_spr/spr048_TDC_HV(2000).png");
 }
 
