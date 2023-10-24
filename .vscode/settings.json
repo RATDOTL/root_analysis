@@ -105,7 +105,13 @@
         "DrawPlot.C": "cpp",
         "don001.C": "cpp",
         "don001 copy.C": "cpp",
-        "don002.C": "cpp"
+        "don002.C": "cpp",
+        "don002 copy.C": "cpp",
+        "don003.C": "cpp",
+        "don003 copy.C": "cpp",
+        "don004.C": "cpp",
+        "don004 copy.C": "cpp",
+        "don005.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
