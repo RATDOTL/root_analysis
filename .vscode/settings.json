@@ -102,7 +102,10 @@
         "test006.C": "cpp",
         "test008 copy.C": "cpp",
         "test009.C": "cpp",
-        "DrawPlot.C": "cpp"
+        "DrawPlot.C": "cpp",
+        "don001.C": "cpp",
+        "don001 copy.C": "cpp",
+        "don002.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
