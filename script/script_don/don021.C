@@ -9,13 +9,13 @@
     // TFile *f1 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_hal/hal00.root");
 
 
-
+   
     // labo PC
-    TFile *f0 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don017.root");
-    TFile *f1 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don016.root");
-    TFile *f2 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don018.root");
-    TFile *f3 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don015.root");
-    TFile *f4 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don014.root");
+    TFile *f0 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don019.root");
+    TFile *f1 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don020.root");
+    TFile *f2 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don021.root");
+    // TFile *f3 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don008.root");
+    // TFile *f4 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don003.root");
     TFile *f5 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_spr/spr059.root");
     // TFile *f1 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_hal/hal00.root");
     
@@ -54,68 +54,65 @@
 
     // T->Draw("a[1]>>h1(100,1250,1600)","!(1000<t[1]&&t[1]<2000)","same");
 
-    // h1->Scale(h0->GetEntries()/h1->GetEntries());
-
-
-    
+    // h1->Scale(h0->GetEntries()/h1->GetEntries());    
 
 
     h1->SetLineColor(4);
     h1->Draw("same histogram");
 
-    f2->cd();
+    // f2->cd();
 
-    T->Draw("a[0]-1257>>h2(100,0,400)","","same histogram");
-    // T->Draw("t[0]");
-    // T->Draw("a[1]>>h1(100,1350,1450)","","same");
-    // T->Draw("a[2]>>h1(100,0,1000)","","same");
-    // T->Draw("a[3]>>h1(100,0,1000)"),"","same";
+    // T->Draw("a[0]-1257>>h2(100,0,400)","","same histogram");
+    // // T->Draw("t[0]");
+    // // T->Draw("a[1]>>h1(100,1350,1450)","","same");
+    // // T->Draw("a[2]>>h1(100,0,1000)","","same");
+    // // T->Draw("a[3]>>h1(100,0,1000)"),"","same";
 
-    // c1->SetLogy();
-
-    
-    // T->Draw("a[0]>>h1(100,1200,1600)","!(1000<t[0]&&t[0]<2000)","same");
-
-    // T->Draw("a[1]>>h1(100,1250,1600)","!(1000<t[1]&&t[1]<2000)","same");
-
-    // h1->Scale(h0->GetEntries()/h1->GetEntries());
-
+    // // c1->SetLogy();
 
     
+    // // T->Draw("a[0]>>h1(100,1200,1600)","!(1000<t[0]&&t[0]<2000)","same");
+
+    // // T->Draw("a[1]>>h1(100,1250,1600)","!(1000<t[1]&&t[1]<2000)","same");
+
+    // // h1->Scale(h0->GetEntries()/h1->GetEntries());
 
 
-    h2->SetLineColor(3);
-    h2->Draw("same histogram");
-
-    f3->cd();
-
-    T->Draw("a[0]-1257>>h3(100,0,400)","","same histogram");
-    // // // // T->Draw("a[0]>>h1(100,0,3000)","","same");
-
-    // // T->Draw("a[0]>>h1(100,1100,2000)","","same");
-    // // T->Draw("a[1]>>h1(100,1000,2500)","","same"); 
-
-    // h2->Scale(h0->GetEntries()/h2->GetEntries());
-
-
-
-    h3->SetLineColor(1);
-    h3->Draw("same histogram");
     
-    f4->cd();
-
-    T->Draw("a[0]-1257>>h4(100,0,400)","","same histogram");
-    // // // // T->Draw("a[0]>>h1(100,0,3000)","","same");
-
-    // // T->Draw("a[0]>>h1(100,1100,2000)","","same");
-    // // T->Draw("a[1]>>h1(100,1000,2500)","","same"); 
-
-    // h2->Scale(h0->GetEntries()/h2->GetEntries());
 
 
+    // h2->SetLineColor(3);
+    // h2->Draw("same histogram");
 
-    h4->SetLineColor(6);
-    h4->Draw("same histogram");
+    // f3->cd();
+
+    // T->Draw("a[0]-1257>>h3(100,0,400)","","same histogram");
+    // // // // // T->Draw("a[0]>>h1(100,0,3000)","","same");
+
+    // // // T->Draw("a[0]>>h1(100,1100,2000)","","same");
+    // // // T->Draw("a[1]>>h1(100,1000,2500)","","same"); 
+
+    // // h2->Scale(h0->GetEntries()/h2->GetEntries());
+
+
+
+    // h3->SetLineColor(1);
+    // h3->Draw("same histogram");
+    
+    // f4->cd();
+
+    // T->Draw("a[0]-1257>>h4(100,0,400)","","same histogram");
+    // // // // // T->Draw("a[0]>>h1(100,0,3000)","","same");
+
+    // // // T->Draw("a[0]>>h1(100,1100,2000)","","same");
+    // // // T->Draw("a[1]>>h1(100,1000,2500)","","same"); 
+
+    // // h2->Scale(h0->GetEntries()/h2->GetEntries());
+
+
+
+    // h4->SetLineColor(6);
+    // h4->Draw("same histogram");
 
     f5->cd();
 
@@ -139,6 +136,5 @@
     
 //     // c1->Print("/mnt/c/Users/posei/Desktop/tokken/winscp/data_test/output/run013_015.pdf");
 //     c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
-    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don018(red)-010(blue)_a[0].png");
-    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don017(red)-016(blue)-018(green)-015(black)-014(pink)-059a[5](lightBlue)_a[0].png");
+    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don019(red)-020(blue)-021(green)-059a[5](lightBlue)_a[0].png");
 }
