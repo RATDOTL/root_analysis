@@ -12,10 +12,10 @@
    
     // labo PC
     TFile *f0 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don025.root");
-    TFile *f1 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don024.root");
-    TFile *f2 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don026.root");
-    TFile *f3 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don027.root");
-    TFile *f4 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don028.root");
+    TFile *f1 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don028.root");
+    TFile *f2 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don029.root");
+    // TFile *f3 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don029.root");
+    // TFile *f4 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don028.root");
     // TFile *f5 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_spr/spr059.root");
     // TFile *f1 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_hal/hal00.root");
     
@@ -35,7 +35,7 @@
 
     // T->Draw("a[2]>>h0(100,1400,1550)","4000<t[2]&&t[2]<4500");
 
-    h0->Scale(h0->GetEntries()/h1->GetEntries());   
+    // h0->Scale(h0->GetEntries()/h1->GetEntries());   
 
     h0->SetLineColor(2);
     h0->Draw();
@@ -57,7 +57,7 @@
 
     // h1->Scale(h0->GetEntries()/h1->GetEntries());    
 
-    h1->Scale(h0->GetEntries()/h1->GetEntries());
+    // h1->Scale(h0->GetEntries()/h1->GetEntries());
     h1->SetLineColor(4);
     h1->Draw("same histogram");
 
@@ -85,35 +85,35 @@
     h2->SetLineColor(3);
     h2->Draw("same histogram");
 
-    f3->cd();
+    // f3->cd();
 
-    T->Draw("a[0]-1257>>h3(100,0,400)","","same histogram");
-    // // // // T->Draw("a[0]>>h1(100,0,3000)","","same");
+    // T->Draw("a[0]-1257>>h3(100,0,400)","","same histogram");
+    // // // // // T->Draw("a[0]>>h1(100,0,3000)","","same");
 
-    // // T->Draw("a[0]>>h1(100,1100,2000)","","same");
-    // // T->Draw("a[1]>>h1(100,1000,2500)","","same"); 
+    // // // T->Draw("a[0]>>h1(100,1100,2000)","","same");
+    // // // T->Draw("a[1]>>h1(100,1000,2500)","","same"); 
 
-    // h2->Scale(h0->GetEntries()/h2->GetEntries());
+    // // h2->Scale(h0->GetEntries()/h2->GetEntries());
 
 
 
-    h3->SetLineColor(1);
-    h3->Draw("same histogram");
+    // h3->SetLineColor(1);
+    // h3->Draw("same histogram");
     
-    f4->cd();
+    // f4->cd();
 
-    T->Draw("a[0]-1257>>h4(100,0,400)","","same histogram");
-    // // // // T->Draw("a[0]>>h1(100,0,3000)","","same");
+    // T->Draw("a[0]-1257>>h4(100,0,400)","","same histogram");
+    // // // // // T->Draw("a[0]>>h1(100,0,3000)","","same");
 
-    // // T->Draw("a[0]>>h1(100,1100,2000)","","same");
-    // // T->Draw("a[1]>>h1(100,1000,2500)","","same"); 
+    // // // T->Draw("a[0]>>h1(100,1100,2000)","","same");
+    // // // T->Draw("a[1]>>h1(100,1000,2500)","","same"); 
 
-    // h2->Scale(h0->GetEntries()/h2->GetEntries());
+    // // h2->Scale(h0->GetEntries()/h2->GetEntries());
 
 
 
-    h4->SetLineColor(6);
-    h4->Draw("same histogram");
+    // h4->SetLineColor(6);
+    // h4->Draw("same histogram");
 
     // f5->cd();
 
@@ -137,6 +137,6 @@
     
 //     // c1->Print("/mnt/c/Users/posei/Desktop/tokken/winscp/data_test/output/run013_015.pdf");
 //     c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
-    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don025(red)-024(blue)-026(green)-027(black)-028(pink)_a[0].png");
+    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don025(red)-028(blue)-029(green)_a[0].png");
     // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don023(red)-022(blue)-021(green)-014(pink)-059a[5](lightBlue)_a[0].png");
 }
