@@ -25,7 +25,7 @@
     // T->Draw("t[3]>>h0(100,1250,1800)");
     // T->Draw("a[0]>>h0");
     // c1->SetLogy();
-    T->Draw("a[0]-1257>>h0(100,0,400)");
+    T->Draw("a[0]-1265>>h0(100,0,400)");
     // T->Draw("a[2]>>h0(100,1400,1600)");
     // T->Draw("a[3]>>h0(100,1250,1500)");
 
@@ -136,6 +136,6 @@
     
 //     // c1->Print("/mnt/c/Users/posei/Desktop/tokken/winscp/data_test/output/run013_015.pdf");
 //     c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
-    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don024(red)_a[0].png");
+    c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don024(red)_a[0].png");
     // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don023(red)-022(blue)-021(green)-014(pink)-059a[5](lightBlue)_a[0].png");
 }

@@ -25,7 +25,7 @@
     // T->Draw("t[3]>>h0(100,1250,1800)");
     // T->Draw("a[0]>>h0");
     // c1->SetLogy();
-    T->Draw("a[0]-1257>>h0(100,0,400)");
+    T->Draw("a[0]-1265>>h0(100,0,400)");
     // T->Draw("a[2]>>h0(100,1400,1600)");
     // T->Draw("a[3]>>h0(100,1250,1500)");
 
@@ -42,7 +42,7 @@
 
     f1->cd();
 
-    T->Draw("a[0]-1257>>h1(100,0,400)","","same histogram");
+    T->Draw("a[0]-1265>>h1(100,0,400)","","same histogram");
     // T->Draw("t[0]");
     // T->Draw("a[1]>>h1(100,1350,1450)","","same");
     // T->Draw("a[2]>>h1(100,0,1000)","","same");
@@ -63,7 +63,7 @@
 
     f2->cd();
 
-    T->Draw("a[0]-1257>>h2(100,0,400)","","same histogram");
+    T->Draw("a[0]-1265>>h2(100,0,400)","","same histogram");
     // T->Draw("t[0]");
     // T->Draw("a[1]>>h1(100,1350,1450)","","same");
     // T->Draw("a[2]>>h1(100,0,1000)","","same");
@@ -87,7 +87,7 @@
 
     f3->cd();
 
-    T->Draw("a[0]-1257>>h3(100,0,400)","","same histogram");
+    T->Draw("a[0]-1265>>h3(100,0,400)","","same histogram");
     // // // // T->Draw("a[0]>>h1(100,0,3000)","","same");
 
     // // T->Draw("a[0]>>h1(100,1100,2000)","","same");
@@ -134,7 +134,7 @@
     
     c1->SetLogy();
     c1->GetYaxis()->SetRangeUser(0, 10000);
-    
+
 //     // c1->Print("/mnt/c/Users/posei/Desktop/tokken/winscp/data_test/output/run013_015.pdf");
 //     c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
     c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don025(red)-024(blue)-026(green)-027(black)_a[0].png");
