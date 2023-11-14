@@ -11,11 +11,11 @@
 
    
     // labo PC
-    TFile *f0 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don060.root");
-    TFile *f1 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don044.root");
-    TFile *f2 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don045.root");
-    TFile *f3 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don046.root");
-    TFile *f4 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don059.root");
+    TFile *f0 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don061.root");
+    TFile *f1 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don057.root");
+    TFile *f2 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don060.root");
+    TFile *f3 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don059.root");
+    TFile *f4 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_spr/spr059.root");
     TFile *f5 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_spr/spr059.root");
     // TFile *f1 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_hal/hal00.root");
     
@@ -102,12 +102,13 @@
     
     f4->cd();
 
-    T->Draw("a[0]-1265>>h4(100,0,400)","","same histogram");
+    T->Draw("a[4]-1327>>h4(100,0,400)","","same histogram");
+    // T->Draw("a[5]-1384>>h5(100,0,400)","","same histogram");
     // // // // T->Draw("a[0]>>h1(100,0,3000)","","same");
 
     // // T->Draw("a[0]>>h1(100,1100,2000)","","same");
     // // T->Draw("a[1]>>h1(100,1000,2500)","","same"); 
-
+    
     // h2->Scale(h0->GetEntries()/h2->GetEntries());
 
 
@@ -139,5 +140,5 @@
 //     c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
     // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don025(red)-033(blue)-036(green)-039(black)-030(pink)_a[0].png");
     // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don060(red)-053(blue)-054(green)-055(black)_a[0].png");
-    c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don060(red)-044(blue)-045(green)-046(black)-059(pink)_a[0]-spr059a[5](lightBlue).png");
+    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don061(red)-057(blue)-060(green)-059(black)-spr059a[4](pink)_a[0]-spr059a[5](lightBlue).png");
 }

@@ -176,7 +176,21 @@
         "don043 copy.C": "cpp",
         "don044-046.C": "cpp",
         "don044-046 copy.C": "cpp",
-        "don047-049.C": "cpp"
+        "don047-049.C": "cpp",
+        "don047-049 copy.C": "cpp",
+        "don050-052.C": "cpp",
+        "don050-052 copy.C": "cpp",
+        "don053-055.C": "cpp",
+        "don053-055 copy.C": "cpp",
+        "don044-055 copy.C": "cpp",
+        "don044-055.C": "cpp",
+        "don056-059.C": "cpp",
+        "don056-061.C": "cpp",
+        "don056-057-061.C": "cpp",
+        "don056-057-061 copy.C": "cpp",
+        "don058-060.C": "cpp",
+        "don058-060 copy.C": "cpp",
+        "don062-063.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
