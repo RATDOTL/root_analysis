@@ -11,8 +11,8 @@
 
 
     // labo PC
-    TFile *f0 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_win/win011.root");
-    // TFile *f1 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data_win/win001.root");
+    TFile *f0 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_win/win017.root");
+    TFile *f1 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_win/win012.root");
     // TFile *f2 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_cas/cas005.root");
     // TFile *f1 = TFile :: Open("C:/Users/posei/Desktop/tokken/winscp/data_test/data_hal/hal00.root");
     
@@ -49,8 +49,8 @@
     h0->SetLineColor(2);
     h0->Draw();
 
-    f0->cd();
-    // T->Draw("a[0]>>h1(100,1200,1300)","","same");
+    f1->cd();
+    T->Draw("a[0]>>h1(100,1250,1500)","","same hiestogram");
     // T->Draw("t[0]");
     // T->Draw("a[1]>>h1(100,1350,1450)","","same");
     // T->Draw("a[2]>>h1(100,0,1000)","","same");
@@ -70,12 +70,12 @@
     // // T->Draw("a[4]>>h1(100,1000,2500)","","same"); 
 
     // T->Draw("a[4]-1270>>h1(300,0,1500)","","same histogram"); 
-    // h1->Scale(h0->GetEntries()/h1->GetEntries());
+    h1->Scale(h0->GetEntries()/h1->GetEntries());
 
 
 
     h1->SetLineColor(4);
-    h1->Draw("same");
+    h1->Draw("same histogram");
 
     // f2->cd();
     // // // // T->Draw("a[0]>>h1(100,0,3000)","","same");
