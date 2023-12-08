@@ -194,7 +194,9 @@
         "don062-063 copy.C": "cpp",
         "don064-067.C": "cpp",
         "win017.C": "cpp",
-        "don063_gfit.C": "cpp"
+        "don063_gfit.C": "cpp",
+        "don063_gfit copy.C": "cpp",
+        "don062_gfit.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
