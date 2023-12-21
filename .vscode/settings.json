@@ -196,7 +196,17 @@
         "win017.C": "cpp",
         "don063_gfit.C": "cpp",
         "don063_gfit copy.C": "cpp",
-        "don062_gfit.C": "cpp"
+        "don062_gfit.C": "cpp",
+        "don068_gfit.C": "cpp",
+        "don068_gfit copy.C": "cpp",
+        "don069_gfit.C": "cpp",
+        "don069_gfit copy.C": "cpp",
+        "don070_gfit.C": "cpp",
+        "don070_gfit copy.C": "cpp",
+        "don071_gfit.C": "cpp",
+        "don071_gfit copy.C": "cpp",
+        "don072_gfit.C": "cpp",
+        "don073_gfit.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
