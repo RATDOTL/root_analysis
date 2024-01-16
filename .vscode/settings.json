@@ -216,7 +216,15 @@
         "don076_gfit copy.C": "cpp",
         "don077_gfit.C": "cpp",
         "don077_gfit copy.C": "cpp",
-        "don078_gfit.C": "cpp"
+        "don078_gfit.C": "cpp",
+        "don078_gfit copy.C": "cpp",
+        "don081_gfit.C": "cpp",
+        "don081_gfit copy.C": "cpp",
+        "don125_gfit.C": "cpp",
+        "don125_gfit copy.C": "cpp",
+        "don121_gfit.C": "cpp",
+        "don120_gfit.C": "cpp",
+        "don124_gfit.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

@@ -11,7 +11,7 @@
 
    
     // labo PC
-    TFile *f0 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don077.root");
+    TFile *f0 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don122.root");
     // TFile *f1 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don063.root");
     // TFile *f2 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don059.root");
     // TFile *f3 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don055.root");
@@ -25,7 +25,7 @@
     // T->Draw("t[0]>>h0(100,1250,1800)");
     // T->Draw("a[0]>>h0");
     // c1->SetLogy();
-    T->Draw("a[0]-1264.5>>h0(100,-100,800)");
+    T->Draw("a[0]-1258>>h0(100,-100,800)");
 
     
 
@@ -34,7 +34,7 @@
     // h0->SetLineColor(2);
     h0->Draw();
 
-    // fitGaussians2(h0, 0, 300);
+    // fitGaussians3(h0, 0, 300);
 
     
     c1->SetLogy();
@@ -44,7 +44,7 @@
 //     c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
     // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don025(red)-033(blue)-036(green)-039(black)-030(pink)_a[0].png");
     // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don060(red)-053(blue)-054(green)-055(black)_a[0].png");
-    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don077_a[0].png");
+    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don069-gfit(PCfit)_a[0].png");
 }
 
 #include <TF1.h>
@@ -131,7 +131,7 @@ void fitGaussians1(TH1F* hist, Double_t rangeMin, Double_t rangeMax) {
 void fitGaussians2(TH1F* hist, Double_t rangeMin, Double_t rangeMax) {
 
     // 合成関数の式を動的に構築
-    Int_t npeaks = 2;  // 仮に3つのピークがあると仮定
+    Int_t npeaks = 5;  // 仮に3つのピークがあると仮定
     TString funcExpression = "0";
     for (Int_t i = 0; i < npeaks; ++i) {
         funcExpression += Form(" + gaus(%d)", i * 3);
@@ -153,11 +153,11 @@ void fitGaussians2(TH1F* hist, Double_t rangeMin, Double_t rangeMax) {
     fitFunc->SetParameter(7, 104);  // Mean 3
     fitFunc->SetParameter(8, 25.0);  // Sigma 3
 
-    fitFunc->SetParameter(9, hist->GetBinContent(hist->FindBin(104)));  // Amplitude 4
+    fitFunc->SetParameter(9, hist->GetBinContent(hist->FindBin(156)));  // Amplitude 4
     fitFunc->SetParameter(10, 156);  // Mean 4
     fitFunc->SetParameter(11, 25.0);  // Sigma 4
 
-    fitFunc->SetParameter(12, hist->GetBinContent(hist->FindBin(104)));  // Amplitude 4
+    fitFunc->SetParameter(12, hist->GetBinContent(hist->FindBin(208)));  // Amplitude 4
     fitFunc->SetParameter(13, 156);  // Mean 4
     fitFunc->SetParameter(14, 25.0);  // Sigma 4
 
@@ -218,20 +218,20 @@ void fitGaussians3(TH1F* hist, Double_t rangeMin, Double_t rangeMax) {
     fitFunc->SetParameter(7, 104);  // Mean 3
     fitFunc->SetParameter(8, 25.0);  // Sigma 3
 
-    fitFunc->SetParameter(9, hist->GetBinContent(hist->FindBin(104)));  // Amplitude 3
+    fitFunc->SetParameter(9, hist->GetBinContent(hist->FindBin(156)));  // Amplitude 3
     fitFunc->SetParameter(10, 156);  // Mean 3
     fitFunc->SetParameter(11, 25.0);  // Sigma 3
 
     // Meanを固定
     fitFunc->FixParameter(1, 0);
-    fitFunc->FixParameter(4, 70.48);
-    fitFunc->FixParameter(7, 70.48 * 2);
-    fitFunc->FixParameter(10, 70.48 * 3);
+    fitFunc->FixParameter(4, 59.3);
+    fitFunc->FixParameter(7, 59.3 * 2);
+    fitFunc->FixParameter(10, 59.3 * 3);
 
     // Sigmaを固定
-    fitFunc->FixParameter(5, 33.19);
-    fitFunc->FixParameter(8, 33.19);
-    fitFunc->FixParameter(11, 33.19);
+    fitFunc->FixParameter(5, 19.26);
+    fitFunc->FixParameter(8, 19.26);
+    fitFunc->FixParameter(11, 19.26);
 
     // ヒストグラムに対してガウスフィットを実行
     hist->Fit(fitFunc, "Q");

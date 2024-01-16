@@ -131,7 +131,7 @@ void fitGaussians1(TH1F* hist, Double_t rangeMin, Double_t rangeMax) {
 void fitGaussians2(TH1F* hist, Double_t rangeMin, Double_t rangeMax) {
 
     // 合成関数の式を動的に構築
-    Int_t npeaks = 2;  // 仮に3つのピークがあると仮定
+    Int_t npeaks = 4;  // 仮に3つのピークがあると仮定
     TString funcExpression = "0";
     for (Int_t i = 0; i < npeaks; ++i) {
         funcExpression += Form(" + gaus(%d)", i * 3);
