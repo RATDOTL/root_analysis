@@ -224,7 +224,11 @@
         "don125_gfit copy.C": "cpp",
         "don121_gfit.C": "cpp",
         "don120_gfit.C": "cpp",
-        "don124_gfit.C": "cpp"
+        "don124_gfit.C": "cpp",
+        "don124_gfit copy.C": "cpp",
+        "don143_gfit.C": "cpp",
+        "don143_gfit copy.C": "cpp",
+        "don144_gfit.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
