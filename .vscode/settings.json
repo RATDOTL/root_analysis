@@ -230,7 +230,27 @@
         "don143_gfit copy.C": "cpp",
         "don144_gfit.C": "cpp",
         "don144_gfit copy.C": "cpp",
-        "don160_gfit.C": "cpp"
+        "don160_gfit.C": "cpp",
+        "don160_gfit copy.C": "cpp",
+        "don161_gfit.C": "cpp",
+        "don161_gfit copy.C": "cpp",
+        "don162_gfit.C": "cpp",
+        "don162_gfit copy.C": "cpp",
+        "don163_gfit.C": "cpp",
+        "don163_gfit copy.C": "cpp",
+        "don167_gfit.C": "cpp",
+        "don167_gfit copy.C": "cpp",
+        "don172_gfit.C": "cpp",
+        "don172_gfit copy.C": "cpp",
+        "don173_gfit.C": "cpp",
+        "don173_gfit copy.C": "cpp",
+        "don174.C": "cpp",
+        "don174 copy.C": "cpp",
+        "don175.C": "cpp",
+        "don175 copy.C": "cpp",
+        "don176.C": "cpp",
+        "don176 copy.C": "cpp",
+        "don177.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
