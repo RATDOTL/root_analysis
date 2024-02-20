@@ -250,7 +250,9 @@
         "don175 copy.C": "cpp",
         "don176.C": "cpp",
         "don176 copy.C": "cpp",
-        "don177.C": "cpp"
+        "don177.C": "cpp",
+        "don135_gfit copy.C": "cpp",
+        "don135_gfit.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

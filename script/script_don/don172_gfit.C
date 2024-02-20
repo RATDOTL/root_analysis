@@ -32,7 +32,7 @@
     // h0->Scale(h0->GetEntries()/h1->GetEntries());   
 
     // h0->SetLineColor(2);
-    h0->Draw();
+    h0->Draw("E");
 
     fitGaussians3(h0, 0, 300);
 
@@ -44,7 +44,7 @@
 //     c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
     // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don025(red)-033(blue)-036(green)-039(black)-030(pink)_a[0].png");
     // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don060(red)-053(blue)-054(green)-055(black)_a[0].png");
-    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don069-gfit(PCfit)_a[0].png");
+    c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don172-gfit(fixedMean-Sigma)_a[0]_E.png");
 }
 
 #include <TF1.h>
