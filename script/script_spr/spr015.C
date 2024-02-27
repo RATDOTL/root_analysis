@@ -11,7 +11,7 @@
 
    
     // labo PC
-    TFile *f0 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don173.root");
+    TFile *f0 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_spr/spr015.root");
     // TFile *f1 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don063.root");
     // TFile *f2 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don059.root");
     // TFile *f3 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don055.root");
@@ -23,28 +23,39 @@
     
     f0->cd();
     // T->Draw("t[0]>>h0(100,1250,1800)");
-    // T->Draw("a[0]>>h0");
+    // T->Draw("a[3]>>h0");
     // c1->SetLogy();
-    T->Draw("a[0]-1258>>h0(200,-100,700)");
 
-    
+    //ADC分布全体の確認
+    // T->Draw("a[2]-1200>>h0(200,-100,1500)");
+    // T->Draw("a[3]-1285>>h0(200,-100,1500)");
+
+    //ADC分布細部の確認
+    // T->Draw("a[2]-1200>>h0(100,100,500)");
+    // T->Draw("a[3]-1285>>h0(100,100,500)");
+
+    //陽電子一個のイベントのみでADC分布を確認
+
+    T->Draw("a[4]>>h0(100,1200,1500)","150<a[2]-1200&&a[2]-1200<400&&150<a[3]-1285&&a[3]-1285<450");
+
+
 
     // h0->Scale(h0->GetEntries()/h1->GetEntries());   
 
     // h0->SetLineColor(2);
     h0->Draw("");
 
-    fitGaussians3(h0, 0, 300);
+    // fitGaussians3(h0, 0, 300);
 
     
-    c1->SetLogy();
+    // c1->SetLogy();
     // c1->GetYaxis()->SetRangeUser(0, 1000000);
     
 //     // c1->Print("/mnt/c/Users/posei/Desktop/tokken/winscp/data_test/output/run013_015.pdf");
 //     c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
     // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don025(red)-033(blue)-036(green)-039(black)-030(pink)_a[0].png");
     // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don060(red)-053(blue)-054(green)-055(black)_a[0].png");
-    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don173-gfit(fixedMean-Sigma)_a[0]_E.png");
+    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_spr/spr015_a[2]detail.png");
 }
 
 #include <TF1.h>

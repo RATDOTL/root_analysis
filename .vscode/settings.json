@@ -252,7 +252,12 @@
         "don176 copy.C": "cpp",
         "don177.C": "cpp",
         "don135_gfit copy.C": "cpp",
-        "don135_gfit.C": "cpp"
+        "don135_gfit.C": "cpp",
+        "spr.C": "cpp",
+        "spr copy.C": "cpp",
+        "spr015.C": "cpp",
+        "spr015 copy.C": "cpp",
+        "spr057.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

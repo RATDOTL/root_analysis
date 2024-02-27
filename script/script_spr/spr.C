@@ -11,7 +11,7 @@
 
    
     // labo PC
-    TFile *f0 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don173.root");
+    TFile *f0 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_spr/spr045.root");
     // TFile *f1 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don063.root");
     // TFile *f2 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don059.root");
     // TFile *f3 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don055.root");
@@ -25,7 +25,7 @@
     // T->Draw("t[0]>>h0(100,1250,1800)");
     // T->Draw("a[0]>>h0");
     // c1->SetLogy();
-    T->Draw("a[0]-1258>>h0(200,-100,700)");
+    T->Draw("a[7]-1258>>h0(200,-100,700)");
 
     
 
@@ -34,7 +34,7 @@
     // h0->SetLineColor(2);
     h0->Draw("");
 
-    fitGaussians3(h0, 0, 300);
+    // fitGaussians3(h0, 0, 300);
 
     
     c1->SetLogy();

@@ -11,7 +11,7 @@
 
    
     // labo PC
-    TFile *f0 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don173.root");
+    TFile *f0 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_spr/spr057.root");
     // TFile *f1 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don063.root");
     // TFile *f2 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don059.root");
     // TFile *f3 = TFile :: Open("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/data/data_don/don055.root");
@@ -23,28 +23,30 @@
     
     f0->cd();
     // T->Draw("t[0]>>h0(100,1250,1800)");
-    // T->Draw("a[0]>>h0");
+    // T->Draw("a[6]>>h0");
     // c1->SetLogy();
-    T->Draw("a[0]-1258>>h0(200,-100,700)");
+    // T->Draw("a[4]-1309>>h0(80,-40,40)");
+    // T->Draw("a[5]-1375>>h0(80,-40,40)");
+    T->Draw("a[6]-1079>>h0(80,-40,40)");
 
     
 
     // h0->Scale(h0->GetEntries()/h1->GetEntries());   
 
     // h0->SetLineColor(2);
-    h0->Draw("");
+    h0->Draw("E");
 
-    fitGaussians3(h0, 0, 300);
+    fitGaussians3(h0, -40, 40);
 
     
-    c1->SetLogy();
+    // c1->SetLogy();
     // c1->GetYaxis()->SetRangeUser(0, 1000000);
     
 //     // c1->Print("/mnt/c/Users/posei/Desktop/tokken/winscp/data_test/output/run013_015.pdf");
 //     c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
     // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don025(red)-033(blue)-036(green)-039(black)-030(pink)_a[0].png");
     // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don060(red)-053(blue)-054(green)-055(black)_a[0].png");
-    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don173-gfit(fixedMean-Sigma)_a[0]_E.png");
+    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_spr/spr057-gfit(PCfit)_a[6].png");
 }
 
 #include <TF1.h>
@@ -131,7 +133,7 @@ void fitGaussians1(TH1F* hist, Double_t rangeMin, Double_t rangeMax) {
 void fitGaussians2(TH1F* hist, Double_t rangeMin, Double_t rangeMax) {
 
     // 合成関数の式を動的に構築
-    Int_t npeaks = 3;  // 仮に3つのピークがあると仮定
+    Int_t npeaks = 1;  // 仮に3つのピークがあると仮定
     TString funcExpression = "0";
     for (Int_t i = 0; i < npeaks; ++i) {
         funcExpression += Form(" + gaus(%d)", i * 3);
@@ -196,7 +198,7 @@ void fitGaussians2(TH1F* hist, Double_t rangeMin, Double_t rangeMax) {
 void fitGaussians3(TH1F* hist, Double_t rangeMin, Double_t rangeMax) {
 
     // 合成関数の式を動的に構築
-    Int_t npeaks = 4;  // 仮に3つのピークがあると仮定
+    Int_t npeaks = 1;  // 仮に3つのピークがあると仮定
     TString funcExpression = "0";
     for (Int_t i = 0; i < npeaks; ++i) {
         funcExpression += Form(" + gaus(%d)", i * 3);
