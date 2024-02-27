@@ -23,11 +23,12 @@
     
     f0->cd();
     // T->Draw("t[0]>>h0(100,1250,1800)");
-    // T->Draw("a[6]>>h0");
+    // T->Draw("a[7]>>h0");
     // c1->SetLogy();
     // T->Draw("a[4]-1309>>h0(80,-40,40)");
     // T->Draw("a[5]-1375>>h0(80,-40,40)");
-    T->Draw("a[6]-1079>>h0(80,-40,40)");
+    // T->Draw("a[6]-1079>>h0(80,-40,40)");
+    T->Draw("a[7]-1262>>h0(80,-40,40)");
 
     
 
@@ -46,7 +47,7 @@
 //     c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
     // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don025(red)-033(blue)-036(green)-039(black)-030(pink)_a[0].png");
     // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don060(red)-053(blue)-054(green)-055(black)_a[0].png");
-    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_spr/spr057-gfit(PCfit)_a[6].png");
+    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_spr/spr057-gfit(PCfit)_a[7]_E.png");
 }
 
 #include <TF1.h>
