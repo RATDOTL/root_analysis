@@ -41,6 +41,12 @@
     //陽電子一個のイベントのみでADC分布を確認
     // T->Draw("a[4]-1309>>h0(100,-15,400)","150<a[2]-1200&&a[2]-1200<400&&150<a[3]-1285&&a[3]-1285<450");
 
+    // T->Draw("a[5]-1375>>h0(100,-15,400)","150<a[2]-1200&&a[2]-1200<400&&150<a[3]-1285&&a[3]-1285<450");
+
+    // T->Draw("a[6]-1079>>h0(100,-15,400)","150<a[2]-1200&&a[2]-1200<400&&150<a[3]-1285&&a[3]-1285<450");
+
+    T->Draw("a[7]-1262>>h0(100,-15,400)","150<a[2]-1200&&a[2]-1200<400&&150<a[3]-1285&&a[3]-1285<450");
+
     //陽電子一個のイベントかつペデスタルの標準誤差3倍以下を排除でADC分布を確認
     // T->Draw("a[4]-1309>>h0(100,-15,400)","150<a[2]-1200&&a[2]-1200<400&&150<a[3]-1285&&a[3]-1285<450&&a[4]-1309>6.12");
 
@@ -48,7 +54,7 @@
 
     // T->Draw("a[6]-1079>>h0(100,-15,400)","150<a[2]-1200&&a[2]-1200<400&&150<a[3]-1285&&a[3]-1285<450&&a[6]-1079>8.52");
 
-    T->Draw("a[7]-1262>>h0(100,-15,400)","150<a[2]-1200&&a[2]-1200<400&&150<a[3]-1285&&a[3]-1285<450&&a[7]-1262>4.71");
+    // T->Draw("a[7]-1262>>h0(100,-15,400)","150<a[2]-1200&&a[2]-1200<400&&150<a[3]-1285&&a[3]-1285<450&&a[7]-1262>4.71");
 
     
 
@@ -56,7 +62,7 @@
 
     h0->SetLineColor(2);
 
-    h0->Draw("");
+    // h0->Draw("");
 
     // fitGaussians3(h0, 0, 300);
 
@@ -69,11 +75,11 @@
 
     // T->Draw("a[6]-1079>>h1(100,-15,400)","150<a[2]-1200&&a[2]-1200<400&&150<a[3]-1285&&a[3]-1285<450&&a[6]-1079<=8.52","same hist");
 
-    T->Draw("a[7]-1262>>h1(100,-15,400)","150<a[2]-1200&&a[2]-1200<400&&150<a[3]-1285&&a[3]-1285<450&&a[7]-1262<=4.71","same hist");
+    // T->Draw("a[7]-1262>>h1(100,-15,400)","150<a[2]-1200&&a[2]-1200<400&&150<a[3]-1285&&a[3]-1285<450&&a[7]-1262<=4.71","same hist");
 
 
-    h1->SetLineColor(4);
-    h1->Draw("same hist");
+    // h1->SetLineColor(4);
+    // h1->Draw("same hist");
 
 
     
@@ -85,7 +91,7 @@
     stats_h1->AddText(Form("Mean: %.2f", h1->GetMean()));
     stats_h1->AddText(Form("Std Dev: %.2f", h1->GetStdDev()));
     stats_h1->SetFillColor(0);
-    stats_h1->Draw();
+    // stats_h1->Draw();
 
 
     // c1->SetLogy();
@@ -95,7 +101,7 @@
 //     c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
     // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don025(red)-033(blue)-036(green)-039(black)-030(pink)_a[0].png");
     // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don060(red)-053(blue)-054(green)-055(black)_a[0].png");
-    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_spr/spr015_a[7]_separated.png");
+    c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_spr/spr015_a[7].png");
 }
 
 #include <TF1.h>
