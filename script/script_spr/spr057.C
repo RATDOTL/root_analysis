@@ -25,19 +25,19 @@
     // T->Draw("t[0]>>h0(100,1250,1800)");
     // T->Draw("a[7]>>h0");
     // c1->SetLogy();
-    // T->Draw("a[4]-1309>>h0(80,-40,40)");
+    T->Draw("a[4]-1309>>h0(80,-40,40)");
     // T->Draw("a[5]-1375>>h0(80,-40,40)");
     // T->Draw("a[6]-1079>>h0(80,-40,40)");
-    T->Draw("a[7]-1262>>h0(80,-40,40)");
+    // T->Draw("a[7]-1262>>h0(80,-40,40)");
 
     
 
     // h0->Scale(h0->GetEntries()/h1->GetEntries());   
 
     // h0->SetLineColor(2);
-    h0->Draw("E");
+    h0->Draw("");
 
-    fitGaussians3(h0, -40, 40);
+    fitGaussians2(h0, -40, 40);
 
     
     // c1->SetLogy();
