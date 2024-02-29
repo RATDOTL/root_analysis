@@ -257,7 +257,8 @@
         "spr copy.C": "cpp",
         "spr015.C": "cpp",
         "spr015 copy.C": "cpp",
-        "spr057.C": "cpp"
+        "spr057.C": "cpp",
+        "spr019.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
