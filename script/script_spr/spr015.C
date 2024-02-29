@@ -33,20 +33,21 @@
     //ADC分布全体の確認
     // T->Draw("a[2]-1200>>h0(200,-100,1500)");
     // T->Draw("a[3]-1285>>h0(200,-100,1500)");
-    // T->Draw("(a[2]-1200+a[3]-1285)/2>>h0(200,100,500)");
+    // T->Draw("((a[2]-1200)*(a[3]-1285))^(1/2)>>h0(200,-100,1500)");
 
     //ADC分布細部の確認
     // T->Draw("a[2]-1200>>h0(100,100,500)");
     // T->Draw("a[3]-1285>>h0(100,100,500)");
+    // T->Draw("((a[2]-1200)*(a[3]-1285))^(1/2)>>h0(200,100,500)");
 
     //陽電子一個のイベントのみでADC分布を確認
-    T->Draw("a[4]-1309>>h0(100,-15,400)","150<a[2]-1200&&a[2]-1200<400&&150<a[3]-1285&&a[3]-1285<450");
+    // T->Draw("a[4]-1309>>h0(100,-15,400)","150<=((a[2]-1200)*(a[3]-1285))^(1/2)&&((a[2]-1200)*(a[3]-1285))^(1/2)<415");
 
-    // T->Draw("a[5]-1375>>h0(100,-15,400)","150<a[2]-1200&&a[2]-1200<400&&150<a[3]-1285&&a[3]-1285<450");
+    // T->Draw("a[5]-1375>>h0(100,-15,400)","150<=((a[2]-1200)*(a[3]-1285))^(1/2)&&((a[2]-1200)*(a[3]-1285))^(1/2)<415");
 
-    // T->Draw("a[6]-1079>>h0(100,-15,400)","150<a[2]-1200&&a[2]-1200<400&&150<a[3]-1285&&a[3]-1285<450");
+    // T->Draw("a[6]-1079>>h0(100,-15,400)","150<=((a[2]-1200)*(a[3]-1285))^(1/2)&&((a[2]-1200)*(a[3]-1285))^(1/2)<415");
 
-    // T->Draw("a[7]-1262>>h0(100,-15,400)","150<a[2]-1200&&a[2]-1200<400&&150<a[3]-1285&&a[3]-1285<450");
+    T->Draw("a[7]-1262>>h0(100,-15,400)","150<=((a[2]-1200)*(a[3]-1285))^(1/2)&&((a[2]-1200)*(a[3]-1285))^(1/2)<415");
 
     //陽電子一個のイベントかつペデスタルの標準誤差3倍以下を排除でADC分布を確認
     // T->Draw("a[4]-1309>>h0(100,-15,400)","150<a[2]-1200&&a[2]-1200<400&&150<a[3]-1285&&a[3]-1285<450&&a[4]-1309>6.12");
@@ -64,13 +65,13 @@
 
     h0->SetLineColor(2);
 
-    // h0->Draw("");
+    h0->Draw("");
 
     // fitGaussians3(h0, 0, 300);
 
     f1->cd();
 
-    // T->Draw("(a[2]-1200+a[3]-1285)/2>>h1(200,100,500)","(a[2]-1200+a[3]-1285)/2>420","same hist");
+    // T->Draw("((a[2]-1200)*(a[3]-1285))^(1/2)>>h1(200,100,500)","((a[2]-1200)*(a[3]-1285))^(1/2)>415","same hist");
 
     //ペデスタルを表示
     // T->Draw("a[4]-1309>>h1(100,-15,400)","150<a[2]-1200&&a[2]-1200<400&&150<a[3]-1285&&a[3]-1285<450&&a[4]-1309<=6.12","same hist");
@@ -88,13 +89,13 @@
 
     
     // ヒストグラムの統計情報を取得して描画
-    TPaveText *stats_h1 = new TPaveText(0.8, 0.6, 0.98, 0.75, "NDC");
-    stats_h1->SetTextSize(0.03);
-    stats_h1->AddText("h1");
-    stats_h1->AddText(Form("Entries: %.0f", h1->GetEntries()));
-    stats_h1->AddText(Form("Mean: %.2f", h1->GetMean()));
-    stats_h1->AddText(Form("Std Dev: %.2f", h1->GetStdDev()));
-    stats_h1->SetFillColor(0);
+    // TPaveText *stats_h1 = new TPaveText(0.8, 0.6, 0.98, 0.75, "NDC");
+    // stats_h1->SetTextSize(0.03);
+    // stats_h1->AddText("h1");
+    // stats_h1->AddText(Form("Entries: %.0f", h1->GetEntries()));
+    // stats_h1->AddText(Form("Mean: %.2f", h1->GetMean()));
+    // stats_h1->AddText(Form("Std Dev: %.2f", h1->GetStdDev()));
+    // stats_h1->SetFillColor(0);
     // stats_h1->Draw();
 
 
@@ -105,7 +106,7 @@
 //     c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
     // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don025(red)-033(blue)-036(green)-039(black)-030(pink)_a[0].png");
     // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don060(red)-053(blue)-054(green)-055(black)_a[0].png");
-    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_spr/spr015_a[2]a[3]_detail.png");
+    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_spr/spr015_a[7].png");
 }
 
 #include <TF1.h>
