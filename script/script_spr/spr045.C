@@ -59,7 +59,7 @@
     // T->Draw("a[7]-1262>>h0(100,-15,400)","150<=((a[2]-1200)*(a[3]-1285))^(1/2)&&((a[2]-1200)*(a[3]-1285))^(1/2)<420&&a[7]-1262>4.71");
 
     //合計
-    // T->Draw("a[4]-1309+a[5]-1375+a[6]-1079+a[7]-1262>>h0(100,-30,700)","150<=((a[2]-1200)*(a[3]-1285))^(1/2)&&((a[2]-1200)*(a[3]-1285))^(1/2)<420");
+    T->Draw("a[4]-1309+a[5]-1375+a[6]-1079+a[7]-1262>>h0(100,-30,700)","150<=((a[2]-1200)*(a[3]-1285))^(1/2)&&((a[2]-1200)*(a[3]-1285))^(1/2)<420");
 
     // h0->Scale(h0->GetEntries()/h1->GetEntries());   
 
@@ -106,7 +106,7 @@
 //     c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
     // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don025(red)-033(blue)-036(green)-039(black)-030(pink)_a[0].png");
     // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don060(red)-053(blue)-054(green)-055(black)_a[0].png");
-    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_spr/spr045_a[2]a[3]detail.png");
+    c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_spr/spr045_total.png");
 }
 
 #include <TF1.h>
