@@ -37,7 +37,7 @@
 
     //ADC分布細部の確認
     // T->Draw("a[2]-1200>>h0(100,100,500)");
-    T->Draw("a[3]-1285>>h0(100,100,500)");
+    // T->Draw("a[3]-1285>>h0(100,100,500)");
     // T->Draw("((a[2]-1200)*(a[3]-1285))^(1/2)>>h0(200,100,500)");
 
     //陽電子一個のイベントのみでADC分布を確認
@@ -106,7 +106,7 @@
 //     c1->Print("C:/Users/posei/Desktop/tokken/winscp/data_test/output/hal008_009_a[3].pdf");
     // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don025(red)-033(blue)-036(green)-039(black)-030(pink)_a[0].png");
     // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_don/don060(red)-053(blue)-054(green)-055(black)_a[0].png");
-    c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_spr/spr042_a[2]a[3]all.png");
+    // c1->Print("C:/Users/niiyama/Desktop/Kyotaro_Nishi/root/root_analysis/output/output_spr/spr042_a[2]a[3]detail.png");
 }
 
 #include <TF1.h>
